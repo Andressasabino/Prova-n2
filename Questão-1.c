@@ -6,9 +6,10 @@ int main()
 {
 	FILE *arq;
 	
+	// Declarando as variáveis
 	char vogais[] = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'};
-	char frase[200];
-	char fraseDoArquivo[200];
+	char arquivo[200];
+	char arquivonovo[200];
 	
 	int i = 0, j = 0;
 	
@@ -16,13 +17,13 @@ int main()
 	arq = fopen("arquivo.txt", "w");
 	
 	if(arq == NULL) {
-		printf("Erro ao abrir o arquivo.");
+		printf("Erro ao abrir o arquivo. Tente novamente.");
 	}
 	
 	// Escrevendo no arquivo 1
 	printf("Insira uma frase: ");
-	gets(frase);
-	fputs(frase, arq);
+	gets(arquivo);
+	fputs(arquivo, arq);
 	
 	// Fechando os arquivos
 	fclose(arq);
@@ -33,26 +34,26 @@ int main()
 		printf("Erro ao abrir o arquivo.");
 	}
 	
-	fgets(fraseDoArquivo, 200, arq);
+	fgets(arquivonovo, 200, arq);
 	
 	fclose(arq);
 	
 	// Substituindo as vogais
-	for(i=0; i < strlen(fraseDoArquivo); i++)
+	for(i=0; i < strlen(arquivonovo); i++)
 	{
 	    for(j=0; j < strlen(vogais); j++)
 	    {
-	        if(vogais[j] == fraseDoArquivo[i])
+	        if(vogais[j] == arquivonovo[i])
 	        {
-	            fraseDoArquivo[i] = '*';
+	            arquivonovo[i] = '*';
 	        }
 	    }
 	}
 	
-  //Abre o novo arquivo para escreta e depois fecha
+	// Abre o novo arquivo para escreta e depois fecha
 	arq = fopen("arquivo-novo.txt", "w");
 	
-	fputs(fraseDoArquivo, arq);
+	fputs(arquivonovo, arq);
 	
 	fclose(arq);
 	
