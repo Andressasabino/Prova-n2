@@ -1,11 +1,10 @@
-/*
- * Faça um programa em C que crie uma struct chamada info_aluno com os campos
- * nome, número de matrícula, nota1, nota2 e média. Crie um vetor de 20 elementos do
- * tipo into_aluno. Leia as informações de cada aluno pelo teclado, calcule a média
- * aritmética e grave o vetor num arquivo binário. Faça outro programa que deverá ler as
- * informações desse arquivo e exibir na tela a lista de alunos com o nome completo, o
- * número de matrícula, as notas e a média aritmética de cada aluno um em cada linha.
- */
+ //Faça um programa em C que crie uma struct chamada info_aluno com os campos
+ //nome, número de matrícula, nota1, nota2 e média. Crie um vetor de 20 elementos do
+ //tipo into_aluno. Leia as informações de cada aluno pelo teclado, calcule a média
+ //aritmética e grave o vetor num arquivo binário. Faça outro programa que deverá ler as
+ //informações desse arquivo e exibir na tela a lista de alunos com o nome completo, o
+ //número de matrícula, as notas e a média aritmética de cada aluno um em cada linha.
+ 
 #include <stdio.h>
 #include <string.h>
 
