@@ -1,3 +1,7 @@
+//Faça um programa em C que abra um arquivo texto para escrita e grave neste arquivo
+//uma frase fornecida pelo usuário. Crie outro arquivo texto contendo o texto do
+//arquivo anterior, mas com as vogais substituídas por ‘*’.
+
 #include <stdio.h>
 #include <string.h>
 
